@@ -7,11 +7,9 @@ function myCreateElement(htmlElement, className, htmlValue) {
     element.classList.add(className);
     element.innerText = htmlValue;
 
-    let youLose = [];
-
     element.addEventListener("click", function () {
 
-        if (element == youLose.value){
+        if (htmlElement === youLose){
             element.classList.add("red");
         }
         else {
