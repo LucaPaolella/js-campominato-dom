@@ -47,11 +47,10 @@ document.getElementById("play").addEventListener('click',
 
 // sviluppo gioco: Giorno 2 di lavoro
 
+let youLose = 16; 
 
-let youLose=({length: 16});
-
-for (let i = 1; i<= 16; i++) {
-    youLose=Math.floor(Math.random () * 100)+1;
-    console.log(youLose)
-}
+    for (let i = 1; i <= 16; i++) {
+        youLose = Math.floor(Math.random() * 100) + 1;
+        console.log(youLose)
+    }
 
