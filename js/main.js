@@ -7,9 +7,19 @@ function myCreateElement(htmlElement, className, htmlValue) {
     element.classList.add(className);
     element.innerText = htmlValue;
 
+    let youLose = [];
+
     element.addEventListener("click", function () {
-        element.classList.add("blue");
+
+        if (element == youLose.value){
+            element.classList.add("red");
+        }
+        else {
+            element.classList.add("blue");
+        }
+        /*element.classList.add("red");*
         /*alert(htmlValue);*/
+
     })
 
     return element;
@@ -35,8 +45,6 @@ const play = document.getElementById("play");
 const start = document.querySelector(".corpo");
 const none = document.querySelector(".none");
 
-
-
 document.getElementById("play").addEventListener('click',
     function () {
 
@@ -47,10 +55,27 @@ document.getElementById("play").addEventListener('click',
 
 // sviluppo gioco: Giorno 2 di lavoro
 
-let youLose = 16; 
+    let youLose = [];
 
-    for (let i = 1; i <= 16; i++) {
-        youLose = Math.floor(Math.random() * 100) + 1;
-        console.log(youLose)
-    }
+    const a =Math.floor(Math.random() * 100) + 1;
+    const b =Math.floor(Math.random() * 100) + 1;
+    const c =Math.floor(Math.random() * 100) + 1;
+    const d =Math.floor(Math.random() * 100) + 1;
+    const e =Math.floor(Math.random() * 100) + 1;
+    const f =Math.floor(Math.random() * 100) + 1;
+    const g =Math.floor(Math.random() * 100) + 1;
+    const h =Math.floor(Math.random() * 100) + 1;
+    const i =Math.floor(Math.random() * 100) + 1;
+    const l =Math.floor(Math.random() * 100) + 1;
+    const m =Math.floor(Math.random() * 100) + 1;
+    const n =Math.floor(Math.random() * 100) + 1;
+    const o =Math.floor(Math.random() * 100) + 1;
+    const p =Math.floor(Math.random() * 100) + 1;
+    const q =Math.floor(Math.random() * 100) + 1;
+    const r =Math.floor(Math.random() * 100) + 1;
+    
+    youLose.push(a, b, c, d, e, f, g, h, i, l, m, n, o, p, q, r);
 
+    console.log(youLose)
+
+    
